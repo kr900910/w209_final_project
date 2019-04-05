@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>EduStats-v2</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom fonts for this template -->
+		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+		<!-- Plugin CSS -->
+		<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+		<!-- Custom styles for this template -->
+		<link href="css/template.min.css" rel="stylesheet">
+		<link href="css/edustats.css" rel="stylesheet">
+
+	</head>
+
+	<body id="page-top">
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+			<span> <img class="img-fluid iconImg" alt="" src="img/icon.jpeg"> </span>
+			<span> <a class="navbar-brand navbar-small" href="#page-top" style="font-size: 1.1em"> w209-Final Project</span></a> </span>
+			<button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<!-- <li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#datausers">Data/Users</a>
+					</li> -->
+					<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#overall">Overview</a>
+					</li>
+					<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#distribution">Distribution</a>
+					</li>
+					<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#relationships">Relationships</a>
+					</li>
+					<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#trends">Trends</a>
+					</li>
+					<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="masthead bg-primary text-white text-center">
+			<div class="container">
+				<h2 class="hjustify text-center">Explore And Visualize Educational Opportunities for Women</h2>
+				<br>
+				<div class="row">
+					<img class="img-fluid mb-5 d-block mx-auto mainImg" alt="" src="img/children.png">
+				</div>
+				<div class="row">
+					<p class="hjustify pstyle">
+						Around the world, women face barriers to education caused by poverty, cultural norms,
+						poor infrastructure, violence and political instability.  Better educated women tend to be healthier,
+						participate more in the formal labor market, earn higher incomes, have fewer children,
+						marry at a later age, and enable better health care and education for their children, should they choose to become mothers.
+						All these factors combined can improve the lives of a nation’s citizens.
+						Closing the education gender gap is a strategic development priority for the United Nations and World Bank.
+					</p>
+					<p class="hjustify pstyle">
+						Our goal is to enable users to efficiently discover, compare and explore educational opportunities for women around the
+						world and aid in the iterative cycle of data exploration, hypotheses generation, testing and insights that ultimately lead to
+						policies that eliminate the education gender gap.
+					</p>
+					<a class="js-scroll-trigger" href="#overall">
+					<button type="submit" class="btn link-color" id="sendMessageButton" href="#overall">
+						Start exploring
+					</button></a>
+				</div>
+		</header>
+
+		<section class="portfolio" id="datausers">
+			<div class="container">
+				<div class="row">
+					<p class="pstyle">
+						<b>DATA:</b> The World Bank EdStats All Indicator Query dataset holds around 4,000
+						internationally comparable features that describe education access, progression, completion, literacy, teachers,
+						population, and expenditures.  EdStats covers over 200 countries dating back to 1970.  Our project utilizes EdStats’
+						country-level enrollment statistics as a proxy for educational opportunities by gender at the primary, secondary and tertiary education levels.
+						<br>
+					</p>
+					<p class="pstyle">
+						<b>USERS:</b> Policy analysts, government education/development officials and NGOs concerned with gender equality issues in education.
+					</p>
+					<p class="pstyle">
+						<b>TASKS:</b>
+						<br>
+						<img class="img-fluid" alt="" src="img/tasks_new.png">
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- basic map Section -->
+		<section class="overall bg-primary text-white" id="overall">
+			<div class="container">
+				<div class="row">
+					<h3>Overview of the enrollment rate of female and the gender parity index (GPI)<sup>*</sup> of enrollment rate by country and year </h3>
+					<div>
+						<p class="pstyle">
+							<b>Interesting Insights:</b>
+							<ul>
+								<li>
+									Overall trends: GPI and Enrollment rate of female is steadily going up over time,
+									indicating more and more women get the opportunity to receive education.
+									However, there are some outliers, for example, the GPI of Tajikistan decrease from above 0.9 to below 0.8 in the year of 1998
+									because of the Civil War.
+								</li>
+								<li>
+									Outliers: Qatar has far higher GPI (1.997) than that of the second highest country Curaca (1.447).
+								</li>
+								<li>
+									Enrollment rate of female has higher variance than that of GPI.
+								</li>
+							</ul>
+						</p>
+						<p class="pstyle">
+							<b>Navigation Instructions:</b>
+							<ul>
+								<li>
+									Overview of the number of key indexes, the enrollment rate of female and GPI, globally.
+								</li>
+								<li>
+									Select index that you would like to see on map and timeline chart. 
+								</li>
+								<li>
+									On the map, hover through a country (or select countries) of interest. 
+									Check the highlighted index of that country among other countries.
+									And check the index trend and data availability of that country through years.
+								</li>
+								<li>
+									From the dropdown to highlight country, users can manually search for the countries to highlight them on the map.
+								</li>
+								<li>
+									On the distribution chart, hover through the outliers on the index distribution chart, and see the name of that country and the time line chart accordingly.
+								</li>
+								<li>
+									On the timeline chart, hover through one year (or select years) to see the index of that year globally on the map, and the distribution of that year.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<div>
+						<div class='tableauPlaceholder' id='viz1544644974588' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;W2&#47;W209_WorldEduStats_Overview&#47;Overview7&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+								<param name='embed_code_version' value='3' />
+								<param name='site_root' value='' />
+								<param name='name' value='W209_WorldEduStats_Overview&#47;Overview7' />
+								<param name='tabs' value='no' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;W2&#47;W209_WorldEduStats_Overview&#47;Overview7&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='filter' value='publish=yes' />
+							</object>
+						</div>
+						<script type='text/javascript'>
+							var divElement = document.getElementById('viz1544644974588');
+							var vizElement = divElement.getElementsByTagName('object')[0];
+							vizElement.style.width = '1200px';
+							vizElement.style.height = '727px';
+							var scriptElement = document.createElement('script');
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);
+						</script>
+					</div>
+				</div>
+		</section>
+
+		<section class="portfolio" id="distribution">
+			<div class="container">
+				<div class="row">
+					<h3> Discover geographic distributions of educational opportunities for women at different levels of schooling using key macro outcomes to filter the data. </h3>
+					<div>
+						<p class="pstyle">
+							<b>Interesting Insights:</b>
+							<ul>
+								<li>
+									The countries in the lower quartile of average female enrollment all have above median population growth.
+								</li>
+								<li>
+									Most countries with enrollment rates favoring women have very high enrollment overall.
+								</li>
+								<li>
+									Countries not reporting enrollment data are predominantly located in low-enrollment regions.
+								</li>
+								<li>
+									Below median female enrollment rates are predominantly found throughout Africa, the Middle East, and Asia.
+								</li>
+							</ul>
+						</p>
+						<p class="pstyle">
+							<b>Navigation Instructions:</b>
+							<ul>
+								<li>
+									To discover interesting geographic distributions, select an enrollment and macro outcome measure using the radio buttons at the right of the dashboard.
+								</li>
+								<li>
+									The map will display the selected enrollment indicator averaged over the selected time frame. Try changing the selected years to discover countries making significant educational enrollment progress.
+								</li>
+								<li>
+									Select portions of the box and whisker plots at the top of the dashboard to find regions of similar enrollment, gender parity, or macro-economic outcome.
+								</li>
+								<li>
+									Select areas of the map to focus on a specific region and identify country outliers within that selection.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<div>
+						<div class='tableauPlaceholder' id='viz1544489617716' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209-Distribution&#47;Dashboard_23&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+								<param name='embed_code_version' value='3' />
+								<param name='site_root' value='' />
+								<param name='name' value='w209-Distribution&#47;Dashboard_23' />
+								<param name='tabs' value='no' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209-Distribution&#47;Dashboard_23&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='filter' value='publish=yes' />
+							</object>
+						</div>
+						<script type='text/javascript'>
+							var divElement = document.getElementById('viz1544489617716');
+							var vizElement = divElement.getElementsByTagName('object')[0];
+							vizElement.style.width = '1200px';
+							vizElement.style.height = '727px';
+							var scriptElement = document.createElement('script');
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio bg-primary text-white" id="relationships">
+			<div class="container">
+				<div class="row">
+					<h3>Explore the relationship between educational opportunities for women at different levels of schooling and the key macro outcomes of population and economic growth. </h3>
+					<div>
+						<p class="pstyle">
+							<b>Interesting Insights:</b>
+							<ul>
+								<li>
+									Strong negative relationship between female enrollment rates and population growth rates
+								</li>
+								<li>
+									Weaker, but positive relationship between female enrollment rates and economic growth rates
+								</li>
+								<li>
+									High population growth | low female enrollment countries are concentrated in sub-Saharan Africa and South Asia
+								</li>
+								<li>
+									Reducing the gender gap at the secondary school level has the biggest impact on population growth
+								</li>
+							</ul>
+						</p>
+						<p class="pstyle">
+							<b>Navigation Instructions:</b>
+							<ul>
+								<li>
+									To explore a relationship, select an enrollment and macro outcome measure using the dropdown boxes at the top left of the dashboard.
+								</li>
+								<li>
+									Using the dropdown boxes to the right, you can filter countries by their respective Geographic Region and/or Income Group.
+								</li>
+								<li>
+									Clicking on the Geographic Region or Income Group legend symbols will highlight those countries.
+								</li>
+								<li>
+									For more navigation tips, hover over the lightbulb icon at the bottom right of the dashboard.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<div>
+						<div class='tableauPlaceholder' id='viz1544645767741' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MacroOutcomevsEnrollment&#47;Scatter_Dash_Final2&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+								<param name='embed_code_version' value='3' />
+								<param name='site_root' value='' />
+								<param name='name' value='MacroOutcomevsEnrollment&#47;Scatter_Dash_Final2' />
+								<param name='tabs' value='no' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MacroOutcomevsEnrollment&#47;Scatter_Dash_Final2&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='filter' value='publish=yes' />
+							</object>
+						</div>
+						<script type='text/javascript'>
+							var divElement = document.getElementById('viz1544645767741');
+							var vizElement = divElement.getElementsByTagName('object')[0];
+							vizElement.style.width = '1200px';
+							vizElement.style.height = '677px';
+							var scriptElement = document.createElement('script');
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="portfolio" id="trends" >
+			<div class="container">
+				<div class="row">
+					<h3 >Analyze and compare trends of key education indicators and key macroeconomic and demographic measures </h3>
+					<div>
+						<p class="pstyle">
+							While the earlier sections provided visualisations to identify overall relationships between education indicators and macroeconomic/demographic indicators,
+							this section enables users to identify year-on-year trends of these indicators individually
+							<br>
+							<b>Interesting Insights:</b>
+							<ul>
+								<li>
+									Low and Low-Middle income countries
+									<ol>
+										<li>
+											There seems to be an improvement in female enrollment rate and gender parity in most of the Low and Low-Middle income countries.
+										</li>
+										<li>
+											Though the overall enrollment numbers are not very high yet, these countries have been successful in achieving continuous growth.
+										</li>
+										<li>
+											These countries must improve their outreach further to improve their overall enrollment rates
+										</li>
+									</ol>
+								</li>
+								<li>
+									As expected, most High-income countries have high enrollment rates over the years and they have been able to sustain these rates.
+								</li>
+							</ul>
+						</p>
+						<p class="pstyle">
+							<b>Navigation Instructions:</b>
+							<ul>
+								<li>
+									Select a country (or type the country name) from the dropdown of your choice in the top left corner to observe the trends
+									After selecting the country click outside the dropdown to close the drop down. (* To reset the dropdown click option "All" 2 times)
+								</li>
+								<li>
+									In the next two dropdowns select an education enrollment rate indicator, and a gender parity index to compare their trends.
+								</li>
+								<li>
+									The two graphs in the bottom show trends in population growth and GDP growth of the country
+								</li>
+								<li>
+									Hover over a specific point of interest to see its corresponding values, double click on that point to filter rest of the graphs for that specific year
+								</li>
+								<li>
+									Select multiple countries from the country dropdown to compare trends for different countries.
+								</li>
+								<li>
+									Clicking on the country name legend will highlight the country if you are comparing trends for multiple countries
+								</li>
+							</ul>
+						</p>
+					</div>
+
+					<div>
+						<div class='tableauPlaceholder' id='viz1544668629008' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MacroOutcomevsEnrollment_trends&#47;DrillDown_Dash2&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+								<param name='embed_code_version' value='3' />
+								<param name='path' value='views&#47;MacroOutcomevsEnrollment_trends&#47;DrillDown_Dash2?:embed=y&amp;:display_count=y&amp;publish=yes' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MacroOutcomevsEnrollment_trends&#47;DrillDown_Dash2&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='filter' value='publish=yes' />
+							</object>
+						</div>
+						<script type='text/javascript'>
+							var divElement = document.getElementById('viz1544668629008');
+							var vizElement = divElement.getElementsByTagName('object')[0];
+							vizElement.style.width = '1200px';
+							vizElement.style.height = '677px';
+							var scriptElement = document.createElement('script');
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer class="footer text-center" id="about">
+			<div class="container-fluid">
+				<h2 class="text-center text-uppercase text-white">About us</h2>
+				<br>
+				<div class="row">
+					<div class="col-md-3 mb-5 mb-lg-0">
+						<h5 class="text-uppercase mb-4">Charlene chen</h5>
+						<p class="lead mb-0">
+							charlene.chen@berkeley.edu
+						</p>
+					</div>
+					<div class="col-md-3 mb-5 mb-lg-0">
+						<h5 class="text-uppercase mb-4">Divya Raaga</h5>
+						<p class="lead mb-0">
+							divyaraaga@berkeley.edu
+						</p>
+					</div>
+					<div class="col-md-3 mb-5 mb-lg-0">
+						<h5 class="text-uppercase mb-4">Matt Thielen</h5>
+						<p class="lead mb-0">
+							matt.thielen@berkeley.edu
+						</p>
+					</div>
+					<div class="col-md-3 mb-5 mb-lg-0">
+						<h5 class="text-uppercase mb-4">Nate Velarde</h5>
+						<p class="lead mb-0">
+							nate.velarde@berkeley.edu
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="copyright py-4 text-center text-white">
+			<div class="container">
+				<small>Copyright &copy; World Education Viz 2018</small>
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		<!-- Contact Form JavaScript -->
+		<script src="js/jqBootstrapValidation.js"></script>
+
+		<!-- Custom scripts for this template -->
+		<script src="js/freelancer.min.js"></script>
+
+	</body>
+
+</html>
